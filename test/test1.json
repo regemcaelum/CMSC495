@@ -1,0 +1,23 @@
+[
+    {
+        "Country": "USA",
+        "Weekly Cases": {
+            "Week_1": 130961, 
+            "Week_2": 101681
+        }
+    },
+
+    {
+        "Country": "Italy",
+        "Weekly Cases":{
+
+        }
+    },
+
+    {
+        "Country": "France",
+        "Weekly Cases":{
+
+        }
+    }
+]
