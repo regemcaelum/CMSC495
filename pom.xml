@@ -1,0 +1,110 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- The Basics -->
+    <groupId>umgc.cmsc495.earlybirds</groupId>
+    <artifactId>covidVisualization</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.11</maven.compiler.source>
+        <maven.compiler.target>1.11</maven.compiler.target>
+        <maven.complier.release>11</maven.complier.release>
+        <javafx.version>11.0.2</javafx.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>5.7</version>
+            <type>jar</type>
+            <scope>test</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+    </dependencies>
+    
+    <!-- Build Settings -->
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.8.1</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <defaultGoal>install</defaultGoal>
+        <directory>${basedir}/</directory>
+        <finalName>${project.artifactId}-${project.version}</finalName>
+    </build>
+
+    <!-- More Project Information -->
+    <developers>
+        <developer>
+            <id>cking133</id>
+            <name>Corey King</name>
+            <email>cking133@student.umgc.edu</email>
+            <url>https://github.com/regemcaelum</url>
+            <organization>UMGC Student</organization>
+            <organizationUrl>https://www.umgc.edu</organizationUrl>
+            <roles>
+                <role>devops engineer</role>
+                <role>developer</role>
+            </roles>
+            <timezone>America/New_York</timezone>
+            <properties>
+                <picUrl>https://media.glassdoor.com/userprofileuser/upul/35257871/35257871-userprofileuser-1602200482512.jpg</picUrl>
+            </properties>
+        </developer>
+        <developer>
+            <id>xzhang12</id>
+            <name>Xingyi Zhang</name>
+            <email>xzhang12@student.umgc.edu</email>
+            <url>https://github.com/Xingyixzhang</url>
+            <organization>UMGC Student</organization>
+            <organizationUrl>https://www.umgc.edu</organizationUrl>
+            <roles>
+                <role>architect</role>
+                <role>developer</role>
+            </roles>
+            <timezone>America/Los_Angeles</timezone>
+            <properties>
+                <picUrl>https://avatars.githubusercontent.com/u/59896882?v=4</picUrl>
+            </properties>
+        </developer>
+        <developer>
+            <id>dpierre15</id>
+            <name>David Pierre</name>
+            <email>xzhang12@student.umgc.edu</email>
+            <url>https://github.com/thatcyberguy</url>
+            <organization>UMGC Student</organization>
+            <organizationUrl>https://www.umgc.edu</organizationUrl>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <timezone>America/New_York</timezone>
+            <properties>
+                <picUrl>https://avatars.githubusercontent.com/u/57381450?v=4</picUrl>
+            </properties>
+        </developer>
+    </developers>
+
+    <!-- Environment Settings -->
+    <ciManagement>
+        <system></system>
+    </ciManagement>
+
+</project>
