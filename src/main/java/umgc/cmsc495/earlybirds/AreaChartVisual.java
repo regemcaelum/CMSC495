@@ -1,3 +1,5 @@
+package umgc.cmsc495.earlybirds;
+
 import java.io.FileReader;
 // import org.json.*;
 import org.json.simple.*;

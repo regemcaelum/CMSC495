@@ -1,3 +1,5 @@
+package umgc.cmsc495.earlybirds;
+
 import javax.sound.sampled.Line;
 import javafx.application.Application;
 import javafx.scene.Scene;
