@@ -1,0 +1,88 @@
+<!-- 
+    * File: index.html
+    * Purpose: User Interface of a Data Visualization Application with Java as the back-end
+    * Powered by: The Early Birds 
+    * Course: CMSC-495
+ -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <!-- Meta tags for the Project Description-->
+            <meta charset="utf-8">
+            <meta name="description" content="Covid-19 - DataVisualization ">
+            <meta name="keywords" content="Visuazing Covid-19 Data for the U.S, Italy and France">
+            <meta name="author" content="The Early Birds">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <title>COVID 19 Data Visualization</title>
+            <!-- We'll need to design a favicon here -->
+            <link rel="icon" href="">
+            
+            <!-- Content Delivery Networks (CDNs) -->
+             <!-- Bootstrap -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <!-- Google Fonts -->
+            <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+            <!-- Font Awesome -->
+            <script src="https://kit.fontawesome.com/913e6da1d9.js" crossorigin="anonymous"></script>
+
+            <!-- Internal CSS If there will be one -->
+            <link rel="stylesheet" type="text/css" href="WHATEVER.css"> 
+    </head>
+<body>
+    <!-- The Bootstrap container class that handle the responsiveness -->
+    <div class="container">
+        <!-- Header divider -->
+        <div>
+        <h1 class="text-center" style="font-family: 'Akaya Kanadaka', cursive;">Welcome to COVID 19 Data Visualization!</h1> 
+                </div><!-- End header div -->
+
+                <!-- Test -->
+                 <!-- <video video width="1310" height="700"autoplay loop muted plays-inline>
+                    <source src="Videos/cyberauth.mp4" type="video/mp4">
+                    </video> -->
+                <!-- End Test -->
+                    <br><!-- More space between the header and the btns -->
+                    <!-- Two classes, first for the dropdown, second to align to far right -->
+                    <!-- Help btn DropDown -->
+                    <div class="dropdown show text-center btn btn-lg float-right"> 
+                      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-cogs"></i>
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <!-- We'll need to create three other file -->
+                      <a class="dropdown-item" href="#">Help</a>
+                      <a class="dropdown-item" href="#">FAQ</a>
+                      <a class="dropdown-item" href="#">About</a>
+                        </div><!-- End Dropdown  -->
+                            </div> <!-- End Help btn  -->
+                            <!-- Display Countries Dropdown button-->
+                                <div class="btn-group">
+                                      <button class="btn btn-secondary btn-lg dropdown-toggle " type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Display Available Countries
+                                              </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">USA</a>
+                                                <a class="dropdown-item" href="#">Italy</a>
+                                                <a class="dropdown-item" href="#">France</a>
+                                                    </div><!-- End DropDown -->
+                                                        </div><!-- End button -->
+                                                        <br> <!-- Adding new space for better visibility -->
+                                                            <br><br><br><!-- Three more break spaces -->
+                                                                <!-- Visualization Charts btn--> 
+                                                                <div class="text-center" >
+                                                                    <h2 style="font-family: 'Akaya Kanadaka', cursive;">Chose your preferred visuallization chart</h2>
+                                                            <!-- Adding three break to the btn for better visibility -->
+                                                        <br>
+                                                    <br>
+                                                <br>
+                                    <!-- Adding the chart button -->
+                                <button type="button" class="btn btn-outline-secondary btn-lg">Line Chart</button>
+                            <button type="button" class="btn btn-outline-secondary btn-lg">Bar Chart</button>
+                        <button type="button" class="btn btn-outline-secondary btn-lg">Area Chart</button>
+                </div><!-- End isualization Charts btn-->
+        </div><!-- End container div -->
+    </body>
+</html>
