@@ -4,7 +4,7 @@
 # from The Early Birds Team.
 ###########################################################################
 
-# Makes a 30 seconds wait on cwaling
+# Makes a 30 seconds wait on crawling
 User-agent: * 
 Crawl-delay: 30
 
