@@ -28,26 +28,20 @@
             <!-- Font Awesome -->
             <script src="https://kit.fontawesome.com/913e6da1d9.js" crossorigin="anonymous"></script>
 
-            <!-- Internal CSS If there will be one -->
-            <link rel="stylesheet" type="text/css" href="WHATEVER.css"> 
+            <!-- Internal style.css-->
+            <link rel="stylesheet" type="text/css" href="style.css"> 
     </head>
 <body>
     <!-- The Bootstrap container class that handle the responsiveness -->
     <div class="container">
         <!-- Header divider -->
         <div>
-        <h1 class="text-center" style="font-family: 'Akaya Kanadaka', cursive;">Welcome to COVID 19 Data Visualization!</h1> 
+        <h1 class="text-center">Welcome to COVID 19 Data Visualization!</h1> 
                 </div><!-- End header div -->
-
-                <!-- Test -->
-                 <!-- <video video width="1310" height="700"autoplay loop muted plays-inline>
-                    <source src="Videos/cyberauth.mp4" type="video/mp4">
-                    </video> -->
-                <!-- End Test -->
                     <br><!-- More space between the header and the btns -->
                     <!-- Two classes, first for the dropdown, second to align to far right -->
                     <!-- Help btn DropDown -->
-                    <div class="dropdown show text-center btn btn-lg float-right"> 
+                    <div class="dropdown show text-center btn btn-outline-primary btn-lg float-right"> 
                       <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <i class="fas fa-cogs"></i>
                       </a>
@@ -58,31 +52,49 @@
                       <a class="dropdown-item" href="#">About</a>
                         </div><!-- End Dropdown  -->
                             </div> <!-- End Help btn  -->
+
                             <!-- Display Countries Dropdown button-->
                                 <div class="btn-group">
-                                      <button class="btn btn-secondary btn-lg dropdown-toggle " type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <button class="btn btn-outline-primary btn-lg dropdown-toggle " type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Display Available Countries
                                               </button>
                                             <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="#">USA</a>
-                                                <a class="dropdown-item" href="#">Italy</a>
-                                                <a class="dropdown-item" href="#">France</a>
+                                                <!-- Name attribute can be used for communication -->
+                                               <a class="dropdown-item" href="#"><input name="usa" type="checkbox"> USA</a>
+                                                <a class="dropdown-item" href="#"><input name="italy" type="checkbox"> Italy</a>
+                                                <a class="dropdown-item" href="#"><input name="france" type="checkbox"> France</a>
                                                     </div><!-- End DropDown -->
                                                         </div><!-- End button -->
+                                                             <!-- Circle that fill the space gap-->
+                                                            <div id="a" class="circle"></div>
+                                                                <div id="b" class="circle"></div>
+                                                                    <div id="c" class="circle "></div>
+                                                                        <div id="a" class="circle"></div>
+                                                                            <div id="b" class="circle"></div>
+                                                                                <div id="c" class="circle "></div>
+                                                                                    <div id="a" class="circle"></div>
+                                                                                <div id="b" class="circle"></div>
+                                                                            <div id="c" class="circle "></div>
+                                                                        <div id="d" class="circle"></div>
+                                                                    <div id="e" class="circle"></div>
+                                                        <div id="f" class="circle "></div>
+                                                        <!-- End Circle -->
                                                         <br> <!-- Adding new space for better visibility -->
                                                             <br><br><br><!-- Three more break spaces -->
                                                                 <!-- Visualization Charts btn--> 
                                                                 <div class="text-center" >
-                                                                    <h2 style="font-family: 'Akaya Kanadaka', cursive;">Chose your preferred visuallization chart</h2>
+                                                                    <h2 >Chose your preferred visuallization chart</h2>
                                                             <!-- Adding three break to the btn for better visibility -->
                                                         <br>
                                                     <br>
                                                 <br>
                                     <!-- Adding the chart button -->
-                                <button type="button" class="btn btn-outline-secondary btn-lg">Line Chart</button>
-                            <button type="button" class="btn btn-outline-secondary btn-lg">Bar Chart</button>
-                        <button type="button" class="btn btn-outline-secondary btn-lg">Area Chart</button>
+                                <button type="button" class="btn btn-outline-primary btn-lg">Line Chart</button>
+                            <button type="button" class="btn btn-outline-primary btn-lg">Bar Chart</button>
+                        <button type="button" class="btn btn-outline-primary btn-lg">Area Chart</button>
                 </div><!-- End isualization Charts btn-->
+            <!-- Credit -->
+            <footer id="footer">&copy;2021 The Early Birds</footer>
         </div><!-- End container div -->
     </body>
 </html>
