@@ -13,7 +13,8 @@ public class App {
 
         try {
             // Opening the file
-            Object obj = parser.parse(new FileReader("WeeklyCases.json"));
+            String fileName = "test\\WeeklyCases.json";
+            Object obj = parser.parse(new FileReader(fileName));
             // creating a Json object
             jsonObj = (JSONObject) obj;
 
