@@ -1,3 +1,5 @@
+package umgc.cmsc495.earlybirds;
+
 import java.io.FileReader;
 // import org.json.*;
 import org.json.simple.*;
@@ -13,7 +15,8 @@ public class App {
 
         try {
             // Opening the file
-            Object obj = parser.parse(new FileReader("WeeklyCases.json"));
+            String fileName = "test\\WeeklyCases.json";
+            Object obj = parser.parse(new FileReader(fileName));
             // creating a Json object
             jsonObj = (JSONObject) obj;
 
@@ -22,8 +25,8 @@ public class App {
         }
 
         LineChartVisual lineChart = new LineChartVisual(jsonObj);
-        BarChartVisual barChart = new BarChartVisual(jsonObj);
-        AreaChartVisual areaChart = new AreaChartVisual(jsonObj);
+        //BarChartVisual barChart = new BarChartVisual(jsonObj);
+        //AreaChartVisual areaChart = new AreaChartVisual(jsonObj);
 
     }
 }
