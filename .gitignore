@@ -1,3 +1,5 @@
+# IDE Generated
+*.classpath # normally don' ignore this
 *.project
 
 # Compiled class file
