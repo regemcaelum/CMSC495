@@ -1,3 +1,5 @@
+package umgc.cmsc495.earlybirds;
+
 import javax.sound.sampled.Line;
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -7,10 +9,8 @@ import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 import javafx.scene.chart.XYChart.Series;
 import javafx.stage.Stage;
-// import jdk.internal.parser.JSONParser;
 
 import java.io.FileReader;
-import org.json.*;
 import org.json.simple.*;
 import org.json.simple.parser.*;
 
