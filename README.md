@@ -1,3 +1,3 @@
-[![Build Status](https://dev.azure.com/CMSC495-TheEarlyBirds/CMSC495/_apis/build/status/CMSC495?branchName=main)](https://dev.azure.com/CMSC495-TheEarlyBirds/CMSC495/_build/latest?definitionId=1&branchName=main)
+[![Build Status](https://dev.azure.com/TheEarlyBirds/covid-visualization/_apis/build/status/regemcaelum.CMSC495?branchName=main)](https://dev.azure.com/TheEarlyBirds/covid-visualization/_build/latest?definitionId=1&branchName=main)
 
 # CMSC495
