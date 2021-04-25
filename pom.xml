@@ -60,7 +60,9 @@
                     <version>3.2.0</version>
                     <configuration>
                         <archive>
-                            <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
+                            <manifest>
+                                <mainClass>umgc.cmsc495.earlybirds.App</mainClass>
+                            </manifest>
                         </archive>
                     </configuration>
                 </plugin>

@@ -1,14 +1,12 @@
-package umgc.cmsc495.earlybirds;
-
 import java.io.FileReader;
 // import org.json.*;
 import org.json.simple.*;
 import org.json.simple.parser.*;
 
-public class AreaChartVisual {
+public class BarChartVisual {
     private JSONObject obj;
 
-    public AreaChartVisual(JSONObject jsonObj) {
+    public BarChartVisual(JSONObject jsonObj) {
         obj = jsonObj;
     }
 }
