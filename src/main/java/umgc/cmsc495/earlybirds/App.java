@@ -16,7 +16,7 @@ import java.io.FileReader;
 import org.json.simple.*;
 import org.json.simple.parser.*;
 
-public class LineChartVisual extends Application {
+public class App extends Application {
     final static String stageTitle = "Covid-19 Line Chart";
     final static String chartTitle = "12-Weeks Covid-19 Infection Cases";
 
