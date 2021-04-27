@@ -1,5 +1,3 @@
-package umgc.cmsc495.earlybirds;
-
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.chart.LineChart;
@@ -17,8 +15,10 @@ import org.json.simple.*;
 import org.json.simple.parser.*;
 
 public class App extends Application {
-    final static String stageTitle = "Covid-19 Line Chart";
     final static String chartTitle = "12-Weeks Covid-19 Infection Cases";
+    final static String lineStageTitle = "Covid-19 Line Chart";
+    final static String areaStageTitle = "Covid-19 Area Chart";
+    final static String barStageTitle = "Covid-19 Bar Chart";
 
     // private JSONObject _obj;
     // private Object country1, country2, country3;
@@ -56,20 +56,25 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         // Set the Visualization Stage:
-        stage.setTitle(stageTitle);
-
         final NumberAxis xAxis = new NumberAxis();
         xAxis.setLabel("Week");
         final NumberAxis yAxis = new NumberAxis();
         yAxis.setLabel("Cases");
 
+        final NumberAxis xAxis_area = new NumberAxis();
+        xAxis_area.setLabel("Week");
+        final NumberAxis yAxis_area = new NumberAxis();
+        yAxis_area.setLabel("Cases");
+
         final CategoryAxis xAxis_bar = new CategoryAxis();
         xAxis_bar.setLabel("Week");
+        final NumberAxis yAxis_bar = new NumberAxis();
+        yAxis_bar.setLabel("Cases");
 
         // Create a Chart Instances:
         final LineChart<Number, Number> lineChart = new LineChart<Number, Number>(xAxis, yAxis);
-        final AreaChart<Number, Number> areaChart = new AreaChart<Number, Number>(xAxis, yAxis);
-        final BarChart<String, Number> barChart = new BarChart<String, Number>(xAxis_bar, yAxis);
+        final AreaChart<Number, Number> areaChart = new AreaChart<Number, Number>(xAxis_area, yAxis_area);
+        final BarChart<String, Number> barChart = new BarChart<String, Number>(xAxis_bar, yAxis_bar);
 
         lineChart.setTitle(chartTitle);
         areaChart.setTitle(chartTitle);
@@ -118,6 +123,19 @@ public class App extends Application {
         series3.setName(country3_name);
         SerieBuilder(series3, weeklyCases3);
 
+        // For Area Chart Specific:
+        Series<Number, Number> series1_area = new XYChart.Series<Number, Number>();
+        series1_area.setName(country1_name);
+        SerieBuilder(series1_area, weeklyCases1);
+
+        XYChart.Series<Number, Number> series2_area = new XYChart.Series<Number, Number>();
+        series2_area.setName(country2_name);
+        SerieBuilder(series2_area, weeklyCases2);
+
+        XYChart.Series<Number, Number> series3_area = new XYChart.Series<Number, Number>();
+        series3_area.setName(country3_name);
+        SerieBuilder(series3_area, weeklyCases3);
+
         // For Bar Chart Specific:
         Series<String, Number> series1_bar = new XYChart.Series<String, Number>();
         series1_bar.setName(country1_name);
@@ -136,11 +154,16 @@ public class App extends Application {
         Scene scene_bar = new Scene(barChart, 800, 600);
 
         lineChart.getData().addAll(series1, series2, series3);
-        areaChart.getData().addAll(series1, series2, series3);
+        areaChart.getData().addAll(series1_area, series2_area, series3_area);
         barChart.getData().addAll(series1_bar, series2_bar, series3_bar);
 
+        // stage.setTitle(lineStageTitle);
         // stage.setScene(scene_line);
+
+        // stage.setTitle(areaStageTitle);
         // stage.setScene(scene_area);
+
+        stage.setTitle(barStageTitle);
         stage.setScene(scene_bar);
 
         stage.show();
