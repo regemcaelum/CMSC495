@@ -43,6 +43,11 @@
             <artifactId>javafx-controls</artifactId>
             <version>${javafx.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>16</version>
+        </dependency>
     </dependencies>
     
     <!-- Build Settings -->
@@ -64,6 +69,14 @@
                                 <mainClass>umgc.cmsc495.earlybirds.App</mainClass>
                             </manifest>
                         </archive>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.openjfx</groupId>
+                    <artifactId>javafx-maven-plugin</artifactId>
+                    <version>0.0.6</version>
+                    <configuration>
+                        <mainClass>umgc.cmsc495.earlybirds.App</mainClass>
                     </configuration>
                 </plugin>
             </plugins>

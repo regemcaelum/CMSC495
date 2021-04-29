@@ -1,4 +1,5 @@
 # IDE Generated
+.vscode
 .classpath
 *.project
 
