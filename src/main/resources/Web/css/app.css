@@ -1,0 +1,89 @@
+/*
+* File: app.css
+* Date: May, 12, 2021
+* Purpose: The purpose of this file is to give a style to the Covid 19 Data Visualization 
+  Application.
+*************** The Early Bird 2021, JavaFX CSS style, All Right Reserved ************
+*/
+
+/* The root file, that can style the entire JavaFX interface */
+.root{
+    -fx-font-size: 20px;
+    -fx-font-family: "Courier New";
+    -fx-height: 50%;
+    
+}
+
+/* Styling the menu for the three countries */
+#menu{
+    -fx-background-color: #6c757d;
+    -fx-background-color: linear-gradient(to right,#6c757d, #28a745,#007bff);
+
+}
+/* Giving the items the color patterns of the circles */
+#usa{
+    -fx-background-color: #6c757d;
+}
+#italy{
+    -fx-background-color: #28a745;
+}
+#france{
+    -fx-background-color: #007bff;
+}
+
+/* Country Items style */
+/* Styling all three buttons together */
+.button{
+  
+    -fx-text-fill: white;
+    -fx-border-radius: 50;
+    -fx-padding: 3 6 6 6;
+    -fx-background-color: #6c757d;
+    -fx-position: center;   
+}
+/* When users hover their mouse over:*/
+/* The buttons */
+.button:hover{
+    -fx-background-color: #007bff;
+    -fx-opacity: 0.9;
+    -fx-font-weight: bold;
+    -fx-border-radius: 50;
+}
+/* The menu */
+#menu:hover{
+    -fx-background-color: #007bff;
+    -fx-opacity: 0.9;
+    -fx-font-weight: bold;
+    -fx-border-radius: 50;
+}
+
+/* The styles for the three buttons */
+
+
+/* Line Chart */
+#lineChartBtn{
+    
+    
+    -fx-border-radius: 50%;
+    
+   
+}
+
+/* Area Chart */
+#areaChartBtn{
+    
+}
+
+/* Bar Chart */
+#barChartBtn{
+    
+}
+
+#label{
+    -fx-text-fill: #28a745;
+}
+
+#label:hover{
+    -fx-font-weight: bold;
+    -fx-text-fill:#007bff;
+}
