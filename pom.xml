@@ -35,8 +35,18 @@
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
-            <artifactId>javafx-fxml</artifactId>
-            <version>16</version>
+            <artifactId>javafx-web</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-graphics</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-media</artifactId>
+            <version>${javafx.version}</version>
         </dependency>
     </dependencies>
     
@@ -49,18 +59,6 @@
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.8.1</version>
                 </plugin>
-                <!-- <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-jar-plugin</artifactId>
-                    <version>3.2.0</version>
-                    <configuration>
-                        <archive>
-                            <manifest>
-                                <mainClass>umgc.cmsc495.earlybirds.App</mainClass>
-                            </manifest>
-                        </archive>
-                    </configuration>
-                </plugin> -->
                 <plugin>
                     <groupId>org.openjfx</groupId>
                     <artifactId>javafx-maven-plugin</artifactId>
